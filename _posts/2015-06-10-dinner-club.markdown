@@ -22,6 +22,7 @@ When a dinner club is initalized, the array of Events is initialized to 0.  You 
 ```
 
 You can add events to the club, either using the arguments needed for an Event object, or passing an Event object itself.
+
 ```ruby
   def add_event(args)
     this_event = get_event_object(args)
@@ -29,6 +30,7 @@ You can add events to the club, either using the arguments needed for an Event o
     events
   end
 ```
+
 get_event_object will either create the event object if it is not already passed as args or send it back if it is already an event object.
 save_event saves the event into the events Array.
 These two methods are utility methods.  I only mention them so that the user knows that they have flexibility about how they pass parameters to add_event.
@@ -100,5 +102,5 @@ calculate_per_person_share calls a utility method, calculate_total, that has cal
   #returns Float, rounded to two decimals
   def calculate_per_person_share (num_persons = @size_of_party)
    (calculate_total / num_persons).round(2)
-   end
+  end
 ```
