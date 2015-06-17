@@ -39,9 +39,9 @@ You can add events to the club, either using the arguments needed for an Event o
 These two methods are utility methods.  I only mention them so that the user knows that they have flexibility about how they pass parameters to add_event.
 
 The user can call the following public methods to get information about members:
- - `get_members_balance` (name)     --> takes a string of "name" and returns a float of their balance
- - `get_member_list`                --> returns an Array of all members from all events
- - `get_each_members_balance`       --> returns a Hash of all members and their balance 
+  - `get_members_balance` (name)     --> takes a string of "name" and returns a float of their balance
+  - `get_member_list`                --> returns an Array of all members from all events
+  - `get_each_members_balance`       --> returns a Hash of all members and their balance 
  
 These three methods all loop through the array @events to get the information requested.  `get_each_members_balance` calls `get_member_list` and `get_members_balance` to construct its Hash.
 
@@ -50,12 +50,12 @@ Behind the scenes, DinnerClub is calling a helper class, CheckSplitter, to split
 ## Event
 
 The event class keeps track of each of the dinner club's events.
-- attendees     --> Array of names of attendees
-- bill_amount   --> Float of the bill
-- tip_percent   --> Integer of the tip (if already in decimal form, will be converted by CheckSplitter)
-- payees        --> Array of names of those who pay - defaults to the same as attendees if not provided
-- location      --> String of the location  - defaults to "not provided" if not provided
-- date          --> Date object - defaults to today if not provided
+  - attendees     --> Array of names of attendees
+  - bill_amount   --> Float of the bill
+  - tip_percent   --> Integer of the tip (if already in decimal form, will be converted by CheckSplitter)
+  - payees        --> Array of names of those who pay - defaults to the same as attendees if not provided
+  - location      --> String of the location  - defaults to "not provided" if not provided
+  - date          --> Date object - defaults to today if not provided
 
 ```ruby
 def initialize(args)
@@ -78,9 +78,9 @@ Event's methods are mainly to set default values for the arguments.  I considere
 ### CheckSplitter
 
 CheckSplitter takes three parameters:
-- `size_of_party` --> Integer, or if not an integer, will be set to 1
-- `bill_amount`   --> Float of the bill - or if not a float, will be set to 0
-- `tip_percent`   --> Integer of the tip - defaults to 18
+  - `size_of_party` --> Integer, or if not an integer, will be set to 1
+  - `bill_amount`   --> Float of the bill - or if not a float, will be set to 0
+  - `tip_percent`   --> Integer of the tip - defaults to 18
 
 ```ruby
   def initialize (args)
