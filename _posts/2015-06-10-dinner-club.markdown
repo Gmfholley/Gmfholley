@@ -4,16 +4,26 @@ title:  "Dinner Club"
 date:   2015-06-17 09:10:41
 categories: ruby classes sample-code
 ---
+#Assignment
 
-So I'm working on this cool project that I thought I'd share with you.
+We're at the beginning of our second week of Omaha Code School.  The assignment has gone through a few iterations and re-factoring.
+
+We should create a DinnerClub class, which keeps track of members, who pays each of the club's outings and how much each person has paid since they began.
+
+The DinnerClub uses the CheckSplitter class to calculate tip.
+
+DinnerClub and CheckSplitter should each have tests.
 
 # Dinner Club
+At first, the DinnerClub's only instance variable was a Hash that stored the member's names as keys and their balance as values.
 
-A dinner club is a group of members who go out to dinner together.  Over time, we needed to keep track of each member's balance and a list of all the events.
+Sumeet assigns "stretches" as the days go on, though.  One of his first stretches was that the people who attend an event might not be the people who pay.
 
-The way I decided to keep track of this is to capture all events of the dinner club (attendees, payees, bill, tip, location, date).  The array of events is DinnerClub's only parameter.  To get information on the members, I loop through the events to get information on members.
+I decided I needed an Event class. An Event captures attendees (Array), payees (Array), bill (Integer), tip (Integer), location (String), date (Date).  The Array of Events is DinnerClub's only instance variable.
 
-When a dinner club is initalized, the array of Events is initialized to 0.  You do not need to pass any arguments into the Dinner Club.
+To get information on the members, I loop through the @events Array.
+
+When a dinner club is initialized, the array of Events is initialized to an empty Array.  You do not need to pass any arguments into the Dinner Club.
 
 ```ruby
   def initialize()
@@ -35,6 +45,7 @@ You can add events to the club, either using the arguments needed for an Event o
 
 
 `get_event_object` will either create the event object if it is not already passed as args or send it back if it is already an event object.
+
 `save_event` saves the event into the events Array.
 These two methods are utility methods.  I only mention them so that the user knows that they have flexibility about how they pass parameters to add_event.
 
@@ -75,39 +86,12 @@ def initialize(args)
  end
 ```
  
-Event's methods are mainly to set default values for the arguments.  I considered making it a struct, but the initializing methods were handy.  I also considered calling CheckSplitter directly from Events.  But I decided to let DinnerClub handle it because then DinnerClub is responsible for knowing about both CheckSplitter and Events.  There's less chance that DinnerClub breaks because I change the Events class or CheckSplitter later.
+Event's methods are mainly to set default values for the arguments.  I considered calling CheckSplitter directly from Events.  But I decided to let DinnerClub handle it because then DinnerClub is responsible for knowing about both CheckSplitter and Events.  There's less chance that DinnerClub breaks because I change the Events class or CheckSplitter later.
 
 ### CheckSplitter
+I marked this code up already.  Find an explanation [here.](./checksplitter.html)
 
-CheckSplitter takes three parameters:
+#Links
+[Here](https://gist.github.com/Gmfholley/35d28cd3cb656275b4b3) is my complete code with app.rb driver file.
 
-  - `size_of_party` --> Integer, or if not an integer, will be set to 1
-  - `bill_amount`   --> Float of the bill - or if not a float, will be set to 0
-  - `tip_percent`   --> Integer of the tip - defaults to 18
-
-```ruby
-  def initialize (args)
-   set_size_party(args[:size_of_party])
-   set_bill_amount(args[:bill_amount])
-   args[:tip_percent].nil? ? set_tip_percent : set_tip_percent(args[:tip_percent])
-   nil
-  end
-```
-
-The `set_size_party`, `set_bill_amount`, and `set_tip_percent` are utility methods to set default values or correct for incorrectly inputted values.  For example, `size_of_party` is set to 1 if a user passes a value that is a string or 0, so that the calculation of `each_persons_split` is not infinity.
-
-The user will probably only use the `calculate_per_person_share` method.  `num_persons`, if not provided, defaults to the `size_of_party` but can be set to another value (for example, to accommodate a party who treats a birthday girl).  
-
-`calculate_per_person_share` calls a utility method, `calculate_total`, that has calcualted the final bill + tip.  `calculate_per_person_share` returns a Float rounded to two decimals.
-
-
-```ruby
-  #Calculates each person's share
-  #
-  #num_persons - Integer representing how many people split the check
-  #
-  #returns Float, rounded to two decimals
-  def calculate_per_person_share (num_persons = @size_of_party)
-   (calculate_total / num_persons).round(2)
-  end
-```
+If you want to play, I've also posted it to [repl.it.](http://repl.it/t59/3)
