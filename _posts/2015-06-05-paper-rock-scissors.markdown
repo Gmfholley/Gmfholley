@@ -176,11 +176,11 @@ end
 ```
 
 #GameDriver
-My GameDriver class has two parameters, a game and a `best_of` set of games for tournaments.
+My GameDriver class has two parameters, a `game` and a `best_of` set of games for tournaments.
 
-You can `play_game` or `play_best_of_game_set`.  A single game call `play_a_game` from game and will then `publish_winners` and `display_score`.
+You can `play_game` or `play_best_of_game_set`.  GameDriver calls `play_a_game` from Game and will then `publish_winners` and `display_score`.
 
-The GameDriver is also responsible for making sure the rules of the game are followed.  It will `get_user_players` and if the user does not create enough players for the game, it will `add_computer_players_if_not_enough_humans`.
+The GameDriver is also responsible for making sure the rules of the Game are followed.  It will `get_user_players` and if the user does not create enough players for the game, it will `add_computer_players_if_not_enough_humans`.
 
 #Links
 [Here](https://gist.github.com/Gmfholley/ab195a42aeaa156dc77b) is my complete code with app.rb driver file.
