@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Dinner Club"
-date:   2015-06-17 09:10:41
+date:   2015-06-03 09:10:41
 categories: ruby classes sample-code
 ---
 #Assignment
 
-We're at the beginning of our second week of Omaha Code School.  The assignment has gone through a few iterations and re-factoring.
+We're at mid week of our first week at Omaha Code School.  The assignment has gone through a few iterations and re-factoring.
 
 We should create a DinnerClub class, which keeps track of members, who pays each of the club's outings and how much each person has paid since they began.
 
