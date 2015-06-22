@@ -176,7 +176,7 @@ end
 ```
 
 #GameDriver
-My GameDriver class has two parameters, a `game` and a `best_of` set of games for tournaments.
+My GameDriver class has two instance variables, a `game` and a `best_of` set of games for tournaments.
 
 You can `play_game` or `play_best_of_game_set`.  GameDriver calls `play_a_game` from Game and will then `publish_winners` and `display_score`.
 
