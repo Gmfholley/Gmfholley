@@ -2,7 +2,7 @@
 layout: post
 title:  "Ruby Prep Work - Five Programming Problems"
 date:   2015-05-15 09:10:41
-categories: jekyll update
+categories: ruby interview-questions
 ---
 
 #Five programming problems

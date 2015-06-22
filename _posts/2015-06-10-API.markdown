@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "APIs - now for something completely different"
+date:   2015-06-10 09:10:41
+categories: ruby api
+---
+
+#Assignment
+
+I think Sumeet sensed that the class was frustrated about re-writing our Rock-Paper-Scissors code over and over again.
+
+```
+  "Don't stop working on your paper, rock, scissors game, but I want to touch on this today as well.  It should be fun!" ~~ Sumeet, very hopefully
+```
+APIs.
+
+Our assignment was to create an account on the Marvel Developer Portal to get a public and private key.  The Marvel API returns JSON, which we haven't learned yet.  But it looks a lot like a Hash.  
+
+```
+  "You could write your own Ruby code to translate and query this API yourself.  But...we're not going to.  (relief palpable) It's already been done.  Your job instead is to find a ruby gem that does that, install it and create your own class to use it."~~Sumeet, so so patiently
+```
+
+This was a hell of a lot of fun. : )
+
+
+#API
+API stands for Application Program Interface.  An API is the interface that the software uses to communicate information about itself (or data from within itself) to the world.  When software developers are talking about APIs, they are usually talking about interfaces (like data in tables, csv, JSON) that allow developers to extract data easily, so that the developers can write classes and methods to manipulate that data in their own software applications.
+
+#Gems
+Ruby Gems are pieces of Ruby code, packaged and documented in a way that developers can easily share and use them.  Ruby Gems may work with APIs, but many Ruby Gems are other pieces of code or parts of applications entirely.  Most APIs already have a Ruby Gem with classes to deal with a particular API.  Think of those API Ruby Gems as putting the API into Ruby for you, so you can start doing whatever you want with the data you're extracting from the API.
+
+
+#Marvelite API
+I used the Marvelite gem.  Since the Marvel API requires an exact match of the superhero name or the superhero's Marvel ID, a connection to the API is not very user-friendly.
+
+So...I used the gem to download all the Marvel superhero names, letter by letter, and store them in a text file.  (I used the same `save_file` method from the 2nd version of the Paper, Rock, Scissors Game.)
+
+Then I allowed the user to do a fuzzy name search of any superhero.  And I suppose, if I had written this code out, that would enable me to get a list of all the comics/movies/universes they were in.
+
+
+
+#Links
+[Here](https://gist.github.com/Gmfholley/7568d33318fa4ae02e08) is my complete code with app.rb driver file.
+
+And then, just for fun, I went ahead and added the MarvelAPI class to DinnerClub, so that you could enter a Marvel character 'theme' to each Event.  
+
+Does it make sense?  No.  But it made me happy.  [Here you go.](https://gist.github.com/Gmfholley/c8a60e93f527bb4d5fca)

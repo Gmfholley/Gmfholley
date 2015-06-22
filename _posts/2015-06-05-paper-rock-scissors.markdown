@@ -2,7 +2,7 @@
 layout: post
 title:  "Rock-Paper-Scissors(-Lizard-Spock)"
 date:   2015-06-05 09:10:41
-categories: ruby first-week
+categories: ruby first-week game
 ---
 
 #Assignment
