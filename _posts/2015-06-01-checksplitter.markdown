@@ -54,15 +54,17 @@ The `calculate_per_person` method is below.
 Note on Ruby's rounding method: Ruby removes trailing 0 decimals on a float.  But it signifies a float by providing one trailing 0 after a decimal.  
 
 So for example...
-```ruby
-total = 30.00
-total.round(2)
-=> $30.0
 
-total = 33.33333333333
-total.round(2)
-=> 33.33  
+```ruby
+  total = 30.00
+  total.round(2)
+  => $30.0
+
+  total = 33.33333333333
+  total.round(2)
+  => 33.33  
 ```
+
 #Links
 [Here](https://gist.github.com/Gmfholley/35d28cd3cb656275b4b3) is my complete code with app.rb driver file.
 

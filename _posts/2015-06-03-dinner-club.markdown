@@ -19,7 +19,7 @@ At first, the DinnerClub's only instance variable was a Hash that stored the mem
 
 Sumeet assigns "stretches" as the days go on, though.  One of his first stretches was that the people who attend an event might not be the people who pay.
 
-I decided I needed an Event class. An Event captures attendees (Array), payees (Array), bill (Integer), tip (Integer), location (String), date (Date).  The Array of Events is DinnerClub's only instance variable.
+I decided I needed an Event class. An Event captures attendees (Array), payees (Array), bill (Float), tip (Integer), location (String), date (Date).  The Array of Events is DinnerClub's only instance variable.
 
 To get information on the members, I loop through the @events Array.
 

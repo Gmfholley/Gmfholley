@@ -31,7 +31,7 @@ My thoughts as I initially designed this were:
 
 #Game
 
-Game has two instance variables - `players` stores an Array of the player object.  `needed_players` is the number of players needed for a game.
+Game has two instance variables - `players` stores an Array of the player objects.  `needed_players` is the number of players needed for a game.
 
 ```ruby
   # prints the rules at the beginning of the game
