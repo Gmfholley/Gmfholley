@@ -9,16 +9,15 @@ categories: ruby api
 
 I think Sumeet sensed that the class was frustrated about re-writing our Rock-Paper-Scissors code over and over again.
 
-```
-  "Don't stop working on your paper, rock, scissors game, but I want to touch on this today as well.  It should be fun!" ~~ Sumeet, very hopefully
-```
+
+>Don't stop working on your paper, rock, scissors game, but I want to touch on this today as well.  It should be fun!
+~~ Sumeet, very hopefully
+
 APIs.
 
 Our assignment was to create an account on the Marvel Developer Portal to get a public and private key.  The Marvel API returns JSON, which we haven't learned yet.  But it looks a lot like a Hash.  
 
-```
-  "You could write your own Ruby code to translate and query this API yourself.  But...we're not going to.  (relief palpable) It's already been done.  Your job instead is to find a ruby gem that does that, install it and create your own class to use it."~~Sumeet, so so patiently
-```
+>You could write your own Ruby code to translate and query this API yourself.  But...we're not going to.  (relief palpable) It's already been done.  Your job instead is to find a ruby gem that does that, install it and create your own class to use it. ~~Sumeet, so so patiently
 
 This was a hell of a lot of fun. : )
 

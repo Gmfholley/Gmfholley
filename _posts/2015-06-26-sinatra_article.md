@@ -7,7 +7,7 @@ categories: ruby sinatra orm
 
 #Assignment
 
-Sumeet is having us answer the questions below.  I'm finding these short writing assignments help us learn technical terms now, but are also useful later.  We are learning so much that review is necessary.
+Today, a short writing assignment on ORM definitions.  I'm finding these short writing assignments help us learn technical terms now, but are also useful later.  We are learning so much that review is necessary.
 
 #Article on Definitions for our ORM/Sinatra project
 
