@@ -74,18 +74,21 @@ Silver			    |  12:00:00			|  Indiana Jones and the Temple of Doom     |
 
 
 Rating Class stored in ratings table
+
 id    |  Rating
 ----- | ---------
 1     |  G
 
 
 Studio Class stored in studios table
+
 id      Studio
 ---- | --------
 1    |  Paramount
 
 
 TimeSlotslot Class stored in timeslots table
+
 id  |    TimeSlotslot
 --- | -----------------
 1   | 12:00 pm
