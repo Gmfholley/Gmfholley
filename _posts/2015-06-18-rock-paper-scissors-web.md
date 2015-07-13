@@ -5,7 +5,7 @@ date:   2015-06-18 09:10:41
 categories: html third-week
 ---
 
-Are you tired of me saying that we are working on our Database project?  We still are.  Models take _time_, yo.  
+Are you tired of me saying that we are working on our Database project?  We still are.  Models take _time_, yo.
 
 But today, we got the briefest of introductions to html as well.  And as a test of how well we understand web architecture, Sumeet asked us to build a paper, rock, scissors game using only...
 

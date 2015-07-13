@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I Love Args"
 date:   2015-06-20 09:10:41
-categories: ruby sql sinatra hashes
+categories: ruby sql sinatra hashes args
 ---
 
 Before I started the class, Omaha Code School sent us a list of problems as prep work.  The basics taught us how to create variables, employ operands, use loops, and the very basics of classes.  

@@ -9,9 +9,9 @@ One of the [former Omaha Code School students](https://railsmama.wordpress.com/2
 
 <img width = 50% height = 50% src = "https://railsmama.files.wordpress.com/2015/06/rails_skills_diagram1.jpeg">
 
-Rails Mama's post is full of encouragement and hope for the future.  But I'm in week two.  It feels like a long road.  I understand just about one quintile of these words even.
+Rails Mama's post is full of encouragement and hope for the future.  But I've just finished week two.  It feels like a long road.  I understand just about one quintile of these words even.
 
-So my response...
+So my best attempt, and fully expecting an Exception...
 
 ```ruby
 
@@ -53,4 +53,4 @@ end
   
 ```
 
-Geek humor. :)
+Yup!  Exception caught.  Let's retry in three months or so.
