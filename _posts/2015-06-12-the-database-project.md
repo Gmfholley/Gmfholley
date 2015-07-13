@@ -28,7 +28,7 @@ Today, actually, the whole weekend's assignment, is to build a Product Inventory
 
 Here are my models:
 
-Movie Class stored in movies table                Foriegn Key   |  Foreign Key
+Movie Class stored in movies table             |   Foriegn Key   |  Foreign Key
 ID    |  Name                                  |   Rating       |   Studio          |  Length  |  Description
 ------|----------------------------------------|----------------|-------------------|----------|-------------
 	1		|	Avengers: Age of Ultron		             |	PG-13			    |  Marvel Studios		|	160      | In a world!
@@ -42,25 +42,27 @@ ID    |  Name                                  |   Rating       |   Studio      
   
   
 Location Class stored in locations table
-ID| Name    | Number of seats  | Number of staff  |   Number of movie slots per day
---|---------|------------------|------------------|--------------------------------
-1	| Purple	|   300	           |    2	            |      5
-2	| Red	    | 300	             |  2	              |    3
-3	| Yellow	|   200	           |    2	            |      5
-4	| Green	  | 200	             |  2	              |    5
-5	| Gold	  |   100	           |    1	            |      4
-6	| Blue	  |   100	           |    1	            |      3
-7	| Orange	|    50	           |    1	            |      6
-8	| Silver	|    50	           |    1	            |      2
-9	| Shamrock|	 300	           |    2	            |      90
+
+ ID | Name    | Number of seats  | Number of staff  |   Number of movie slots per day|
+  - | ------- | ---------------- | ---------------- | ------------------------------ |
+ 1	| Purple	|   300	           |    2	            |      5                         |
+ 2	| Red	    | 300	             |  2	              |    3                           |
+ 3	| Yellow	|   200	           |    2	            |      5                         |
+ 4	| Green	  | 200	             |  2	              |    5                           |
+ 5	| Gold	  |   100	           |    1	            |      4                         |
+ 6	| Blue	  |   100	           |    1	            |      3                         |
+ 7	| Orange	|    50	           |    1	            |      6                         |
+ 8	| Silver	|    50	           |    1	            |      2                         |
+ 9	| Shamrock|	 300	           |    2	            |      90                        |
                                
  
  
 LocationTime Class stored in locationtimes table
+
 Composite Key   |  Composite Key|
 Foreign Key     |  Foreign Key  |   Foreign Key                             |
 Location        |  TimeSlotslot |       Movie                               |      Number of Tickets sold
-----------------|---------------|-------------------------------------------|-----------------------------
+--------------- | ------------- | ----------------------------------------- | ----------------------------
 Purple			    |  12:00:00			|  Avengers: Age of Ultron                  |
 Purple			    |  22:00:00			|  Avengers: Age of Ultron                  |
 Purple			    |  17:00:00			|  Avengers: Age of Ultron                  |
@@ -73,19 +75,19 @@ Silver			    |  12:00:00			|  Indiana Jones and the Temple of Doom     |
 
 Rating Class stored in ratings table
 id    |  Rating
-------|----------
+----- | ---------
 1     |  G
 
 
 Studio Class stored in studios table
 id      Studio
------|---------
+---- | --------
 1    |  Paramount
 
 
 TimeSlotslot Class stored in timeslots table
 id  |    TimeSlotslot
-----|------------------
+--- | -----------------
 1   | 12:00 pm
 
 
