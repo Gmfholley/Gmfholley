@@ -8,8 +8,9 @@ categories: ruby models database sql week-four sinatra
 So I worked all weekend on trying to update my Database Theatre Manager project from a Command Line UX to a web UX using Sinatra.
 
 I had two main problems.  Several models had Foreign Keys as instance variables.  How to make sure that: 
-  1. the user could only choose Foreign Keys that already existed in the database.  It would be cool if this were in a drop-down field on the web,
-  2. the value displayed for the user wasn't the Foreign Key itself, which is usually just a number, but, say, the name of the Foreign Key.  Something that makes sense to a human.
+
+  1. The user can only choose Foreign Keys that already exist in the database.  It would be cool if the choices could be displayed in a drop-down input field
+  2. The value displayed for the user shouldn't be the Foreign Key itself, which is usually just a number, but, say, the name of the Foreign Key.  Something that makes sense to a human.
 
 So...I created a ForeignKey class.  It stores the id of the Primary Key, the name of the Class to which it belongs, and an Array called errors*, which stores whether this is a good Primary Key or not.
 

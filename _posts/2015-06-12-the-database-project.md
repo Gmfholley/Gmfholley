@@ -28,70 +28,34 @@ Today, actually, the whole weekend's assignment, is to build a Product Inventory
 
 Here are my models:
 
-Movie Class stored in movies table             |   Foriegn Key   |  Foreign Key
-ID    |  Name                                  |   Rating       |   Studio          |  Length  |  Description
-------|----------------------------------------|----------------|-------------------|----------|-------------
-	1		|	Avengers: Age of Ultron		             |	PG-13			    |  Marvel Studios		|	160      | In a world!
-	2		|	Kingsman: And there is a colon		     |	R		    	    |  20th Century Fox	|	129      | Some movie I don't know.
-	3		|	Guardians of the Galaxy		             |	PG-13			    |  Marvel Studios		|	121      | Chris Pratt!
-	5		|	Boyhood		                             |	R		      	  |  IFC Productions	|		165    |   A boy's life.
-	6		|	Frozen		                             |	PG		  	    |  Disney		        |	91       | Let it go!
-	7		|	Inside Out		                         |	PG		  	    |  Pixar		        |  	89     |   I like Pixar.
-	8		|	Indiana Jones and the Temple of Doom	 |	PG		  	    |  Paramount		    |  	118    |   True classic.
-                                                                |
-  
-  
+Movie Class stored in movies table
+
+ - id | Name | Rating | Studio | Length | Description
+    - Rating and Studio are Foreign Keys
+    
 Location Class stored in locations table
 
- ID | Name    | Number of seats  | Number of staff  |   Number of movie slots per day|
-  - | ------- | ---------------- | ---------------- | ------------------------------ |
- 1	| Purple	|   300	           |    2	            |      5                         |
- 2	| Red	    | 300	             |  2	              |    3                           |
- 3	| Yellow	|   200	           |    2	            |      5                         |
- 4	| Green	  | 200	             |  2	              |    5                           |
- 5	| Gold	  |   100	           |    1	            |      4                         |
- 6	| Blue	  |   100	           |    1	            |      3                         |
- 7	| Orange	|    50	           |    1	            |      6                         |
- 8	| Silver	|    50	           |    1	            |      2                         |
- 9	| Shamrock|	 300	           |    2	            |      90                        |
-                               
- 
- 
-LocationTime Class stored in locationtimes table
+ - id | Name | Number of seats  | Number of staff  | Number of movie slots per day|
 
-Composite Key   |  Composite Key|
-Foreign Key     |  Foreign Key  |   Foreign Key                             |
-Location        |  TimeSlotslot |       Movie                               |      Number of Tickets sold
---------------- | ------------- | ----------------------------------------- | ----------------------------
-Purple			    |  12:00:00			|  Avengers: Age of Ultron                  |
-Purple			    |  22:00:00			|  Avengers: Age of Ultron                  |
-Purple			    |  17:00:00			|  Avengers: Age of Ultron                  |
-Red			        |  12:00:00			|  Kingsman: And there is a colon           |
-Yellow			    |  12:00:00			|  Kingsman: And there is a colon           |
-Shamrock			  |  12:00:00			|  Frozen                                   |
-Shamrock			  |  14:30:00			|  Avengers: Age of Ultron                  |
-Silver			    |  12:00:00			|  Indiana Jones and the Temple of Doom     |
+LocationTime Class stored in location_times table
 
+ - Location |  TimeSlot |  Movie  |  Number of Tickets sold
+   - Location & TimeSlot are composite key
+   - Location, TimeSlot, and Movie are Foreign Keys
 
 Rating Class stored in ratings table
 
-id    |  Rating
------ | ---------
-1     |  G
-
+ - id | Rating
 
 Studio Class stored in studios table
 
-id      Studio
----- | --------
-1    |  Paramount
+ - id | Studio
 
 
-TimeSlotslot Class stored in timeslots table
+TimeSlot Class stored in timeslots table
 
-id  |    TimeSlotslot
---- | -----------------
-1   | 12:00 pm
+ - id | TimeSlot
+
 
 
 Six models.  Not the three required.  I had wanted to keep my models nice and simple, just movies, location, and ratings.  But looking ahead at the assignment where you must be able to have many Movies in a single location (which works well with books and shelves), the only way that works for movie-locations is if you play the many movies at different times.

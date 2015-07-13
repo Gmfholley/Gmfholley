@@ -20,7 +20,7 @@ I am simultaneously excited and scared.  In a good way!
 #Sinatra
 Sinatra is a ruby gem that turns your own computer into a web server and creates the framework to create a basic Controller with requests and responses.
 
-So the controller in Sinatra might like this:
+So the controller in Sinatra might look like this:
 
 ```ruby
   get "/home" do
@@ -30,7 +30,7 @@ So the controller in Sinatra might like this:
   end
 ```
 
-And that means that if you ran Sinatra and typed in "localhost:whatever_port_Sinatra_uses/home" into your web browser, this controller would find "/home", load the erb file called "menu", and the "menu" file would have access to @menu.
+And that means that if you ran Sinatra and typed in "localhost:`whatever_port_Sinatra_uses`/home" into your web browser, this controller would find "/home", load the erb file called "menu", and the "menu" file would have access to @menu.
 
 So you create controllers for all the urls your user should have access to, and you generate the correct views or erb files, that should be sent to the user in response to their request.
 
