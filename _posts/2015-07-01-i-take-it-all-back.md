@@ -13,14 +13,14 @@ Sure, sure.  I think I can handle that.
 
 But (twist!), the assets (pictures) are from the actual BarCamp website.  I hadn't noticed this, but the very first section consists of FIVE different pictures, all layered on top of one another.  Here is the web site.
 
-<img src="http://gmfholley.github.io/2015-07-01-hero.png" style="text-align: center">
+<img src="http://gmfholley.github.io/assets/2015-07-01-hero.png" style="text-align: center; display: block; margin: auto;">
 
 And here are each of the layers.
 
-<img src="http://gmfholley.github.io/2015-07-01-mountains.jpg" style="width: 25% padding: 10px display: inline">
-<img src="http://gmfholley.github.io/2015-07-01-lake.png" style="width: 25% padding: 10px display: inline">
-<img src="http://gmfholley.github.io/2015-07-01-trees.png" style="width: 25% padding: 10px display: inline">
-<img src="http://gmfholley.github.io/2015-07-01-hero_logo.png" style="width: 25% padding: 10px display: inline">
+<img src="http://gmfholley.github.io/assets/2015-07-01-mountains.jpg" style="width: 150px; padding: 10px; display: inline; margin: 0;">
+<img src="http://gmfholley.github.io/assets/2015-07-01-lake.png" style="width: 150px; padding: 10px; display: inline; margin: 0;">
+<img src="http://gmfholley.github.io/assets/2015-07-01-trees.png" style="width:150px; padding: 10px; display: inline; margin: 0;">
+<img src="http://gmfholley.github.io/assets/2015-07-01-hero_logo.png" style="width: 150px; padding: 10px; display: inline; margin: 0">
 
 
 
@@ -31,7 +31,7 @@ Also...WHYYYYYYYYYY? (Ok, setting aside momentary panic.)
 
 And then, notice this effect as the browser window gets wider.  The entire logo remains centered within the viewing window.  It is set to a specific width, yes.  But it is *centered* within that width.  So you see more and more of the sides of the shot until it reaches a certain width, and then it expands with the size of the window.
 
-![Bar Camp Shrinks]({{http://gmfholley.github.io}}/2015-07-01-bar-camp-shrink.gif)
+![Bar Camp Shrinks]({{http://gmfholley.github.io}}/assets/2015-07-01-bar-camp-shrink.gif)
 
 
 Sumeet did warn us that the very first section was the very hardest section.  And to maybe try the easier parts first, to make progress.  I did not do that, since most of the rest of my site worked okay with a slight increase in browser width.  
