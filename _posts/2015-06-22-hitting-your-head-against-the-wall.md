@@ -103,7 +103,7 @@ And I can use these Arrays of `foreign_key_fields`, `non_foreign_key_fields`, an
 
 First by cycling through all `non_foreign_key_fields` and just creating a text input html field for each one.
 
-Then by cycling throughthe `foreign_key_fields` and creating a select html element for each one, with an option of each of the `foreign_key_choices` for that field and selecting the choice that matches this object's `foreign_key_id`.
+Then by cycling through the `foreign_key_fields` and creating a select html element for each one, with an option of each of the `foreign_key_choices` for that field and selecting the choice that matches this object's `foreign_key_id`.
 
 ```html
   <form action="/submit/<%=params["something"]%>">
@@ -153,4 +153,4 @@ And I felt close to tears.  Because I have been straining and wringing and conto
 
 Maybe this one lesson was more valuable than all the rest.
 
-*_Sumeet gave us the idea to create an array called errors to store our errors in for validation.  Each model should have a valid? class that is called before a database SQL statement is called to make sure the object has good data.  Same idea here._
+*_Sumeet gave us the idea to create an array called errors to store our errors in for validation.  Each model should have a valid? method that is called before a database SQL statement is called to make sure the object has good data.  Same idea here._
