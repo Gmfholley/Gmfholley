@@ -56,7 +56,7 @@ end
 
 But in addition, there are `has_and_belongs_to_many` associations and `has_many, through` relationships.  Which are really just the difference between a many-to-many relationship through a bridge table or through a model.  But which, to clarify in my own mind, I drew out. 
 
-<p style="text-align: center;"><img src="/assets/2015-07-16-active-record.png" alt="grandfather telling it to fred savage"></p>
+<p style="text-align: center;"><img src="/assets/2015-07-13-active-record.png" alt="grandfather telling it to fred savage"></p>
 
 
 I'm excited!  ActiveRecord has been talked up since we learned about models.  It's rare that the Gem is Everything You Wanted...And More!

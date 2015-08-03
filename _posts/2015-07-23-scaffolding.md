@@ -7,7 +7,7 @@ categories: rails ruby tricks scaffolding
 
 Again, I'm showing my age.  But do you remember those [TI-80 calculators](http://www.amazon.com/Texas-Instruments-TI-80-Graphing-Calculator/dp/B000OMXVA0), back before handheld pcs become a thing that could also make calls?
 
-And you had spent 3.5 semesters learning how to derive trigonometry and geometry and most of early calculus entirely by hand?
+And you spent 3.5 semesters learning how to derive trigonometry and geometry and most of early calculus entirely by hand?
 
 And suddenly, the math teacher passes out these bad asses and is like, "Ok, now that you know how to do that, we're going to give you these tools.  Use them, because we're going to do awesome stuff now."
 

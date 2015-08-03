@@ -21,7 +21,7 @@ You are not changing the website.  That was still given to your browser by the s
 
 Here's me accessing the h1 element of my Javascript game using console.
 
-<img src="2015-07-08-dom-manipulation.gif" alt="using console to get the h1 tag" style="text-align: center;">
+<p style="text-align: center;"><img src="/assets/2015-07-08-dom-manipulation.gif" alt="using console to get the h1 tag" style="text-align: center;"></p>
 
 So yesterday, entirely in javascript, we made a simple game.
 
@@ -34,25 +34,25 @@ We need to use web elements to do the same thing.  And further, we need to know 
 Today, we are pair programming again to create HTML functionality that you have probably seen all the time. Things you expect to happen when you click or scroll but that are not possible with html and css.  For example:
 
 1. An Accordion
-<img src="2015-07-08-accordion.gif" alt="an accordion style menu" style="text-align: center;">
+<p style="text-align: center;"><img src="/assets/2015-07-08-accordion.gif" alt="an accordion style menu" style="text-align: center;"></p>
 
 2. Appearing/disappearing menu
-<img src="2015-07-08-hamburger-menu.gif" alt="a menu apears when you click on it" style="text-align: center;">
+<p style="text-align: center;"><img src="/assets/2015-07-08-hamburger-menu.gif" alt="a menu apears when you click on it" style="text-align: center;"></p>
 
 3. Appearing/disappearing Modal window
-<img src="2015-07-08-modal-window.gif" alt="a pop-up window appears" style="text-align: center;">
+<p style="text-align: center;"><img src="/assets/2015-07-08-modal-window.gif" alt="a pop-up window appears" style="text-align: center;"></p>
 
 4. Automatic tabbing to the next input field when a certain character limit is reached
-<img src="2015-07-08-phone-number.gif" alt="tab to the next phone number slot after three digits" style="text-align: center;">
+<p style="text-align: center;"><img src="/assets/2015-07-08-phone-number.gif" alt="tab to the next phone number slot after three digits" style="text-align: center;"></p>
 
 5. Changing screen at a certain scroll height
 
 Since there's not much on this screen, it's hard to see because there's not much on the page.  But the nav par is 'sticky', staying at the top when you scroll down, and when you scroll down far enough, the nav bar shortens in height and the picture at upper left changes.
 
-<img src="2015-07-08-scroll-effect.gif" alt="nav bar changes when you scroll down" style="text-align: center;">
+<p style="text-align: center;"><img src="/assets/2015-07-08-scroll-effect.gif" alt="nav bar changes when you scroll down" style="text-align: center;"></p>
 
 6. Tabs that display their content when clicked
-<img src="2015-07-08-tabs.gif" alt="content changes according to the tab you click" style="text-align: center;">
+<p style="text-align: center;"><img src="/assets/2015-07-08-tabs.gif" alt="content changes according to the tab you click" style="text-align: center;"></p>
 
 Nothing today was hard, but everything was important.  These elements are so much a part of the user experience of the web, that we will be creating these same features in almost every web application.
 
@@ -101,4 +101,5 @@ Man, I am dead tired today!  *lol* Going to sleep.
 Today was a good day.  And it was a satisfying experience to learn something that I know we'll use 100 times.  I feel like with ruby and Sinatra and HTML and css and now javascript, we've been given the keys to the kingdom.  And now it's just a matter of learning all about the kingdom! No pressure! ;)
 
 *I cannot help humming the Rubbery Ducky song when somebody mentions rubber ducking.  Since I'm singing it, I thought I'd share this with you.
-  <iframe width="420" height="315" src="https://www.youtube.com/embed/Mh85R-S-dh8" frameborder="0" allowfullscreen></iframe>
+
+<p style="text-align: center;">  <iframe width="420" height="315" src="https://www.youtube.com/embed/Mh85R-S-dh8" frameborder="0" allowfullscreen></iframe></p>
