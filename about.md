@@ -6,6 +6,8 @@ permalink: /about/
 
 #Me
 
+<p style="text-align: center;"><img src="/assets/about.jpg" alt="Welcome!  This is me"></p>
+
 I love books by Octavia Butler, running in the spring, traveling where I've never been, and french press coffee in the morning.
 
 I like like problem solving, abstract thinking, and...I'm lazy.  So code found me.  I have created a lot of non-professional applications in VBA to solve problems. I might share some of them. Now studying ruby.
