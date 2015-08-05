@@ -21,7 +21,7 @@ You are not changing the website.  That was still given to your browser by the s
 
 Here's me accessing the h1 element of my Javascript game using console.
 
-<p style="text-align: center;"><img src="/assets/2015-07-08-javascript- dom-manipulation.gif" alt="using console to get the h1 tag" style="text-align: center;"></p>
+<p style="text-align: center;"><img src="/assets/2015-07-08-javascript-dom-manipulation.gif" alt="using console to get the h1 tag" style="text-align: center;"></p>
 
 So yesterday, entirely in javascript, we made a simple game.
 
