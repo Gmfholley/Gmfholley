@@ -39,7 +39,7 @@ Here are our solutions so far:
 - Gannt charts are hard.  The only solutions I found were in very elaborate Task Management gems.  But [chartkick](http://chartkick.com/)'s timeline chart looks pretty close!
 - [Figaro gem](https://github.com/laserlemon/figaro).  Even has Heroku deployment compatability.  Whaaaaat?
 
-[Here is a link to our project so far.](https://github.com/omahacodeschool/grant-tracker)  I think we have one of the harder ones.  I am working [Nick Emanuel](https://github.com/njemanuel01) again and [Sam Stephen](https://github.com/samstephen).  
+~~[Here is a link to our project so far.](https://github.com/omahacodeschool/grant-tracker)~~  #Edit - This repository is private, sorry.  I think we have one of the harder ones.  I am working with [Nick Emanuel](https://github.com/njemanuel01) again and [Sam Stephen](https://github.com/samstephen).  
 
 Nick and I are working on the back end together.  Sam has the front end.  He is using a framework called [Foundation](http://foundation.zurb.com/), which I hope I get to learn more about.  It looks amazing and versatile.  
 

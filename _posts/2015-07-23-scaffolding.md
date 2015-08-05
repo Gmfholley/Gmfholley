@@ -31,15 +31,15 @@ Today...
 
 > You know how long you spent creating controllers and routes (RESTful or otherwise) and views and models and database migrations?  Here are two lines that will change your life...
 
-```Mac OSX Command Line
- # Command line
-> rails generate scaffold HighScore game:string score:integer  
-=> Does all the models, controllers, and views
 ```
+  $ rails generate scaffold MyNewModel game:string score:integer  
+  => Does all the models, controllers, and views
+```
+
 
 ```ruby
  ## config/routes.rb
- resources high_scores
+ resources my_new_models
  #Does all the RESTful routes
 
 ```

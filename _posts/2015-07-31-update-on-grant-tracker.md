@@ -36,4 +36,6 @@ Questions we have:
 
 I'm really excited about how far we got in a week.  At the same time, by Wednesday, I knew we were being too ambitious.  It's hard to put this all together in a week.
 
-So the team is decided.  We'll be working on it more next week.  [Here is a link to our project, with spec, Documentation with more technical spec, and code itself.](https://github.com/omahacodeschool/grant-tracker)
+So the team is decided.  We'll be working on it more next week.  ~~[Here is a link to our project, with spec, Documentation with more technical spec, and code itself.](https://github.com/omahacodeschool/grant-tracker)~~
+
+Apparently, this is a private repository.  Boo.  Sorry, I can't share it with you guys.
