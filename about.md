@@ -6,7 +6,7 @@ permalink: /about/
 
 #Me
 
-<p style="text-align: center;"><img src="/assets/about.JPG" alt="Welcome!  This is me"></p>
+<p style="text-align: center;"><img src="/assets/2015-07-28-hollywoo.png" alt="Welcome!  This is me"></p>
 
 I love books by Octavia Butler, running in the spring, traveling where I've never been, and french press coffee in the morning.
 
