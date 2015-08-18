@@ -2,7 +2,7 @@
 layout: post
 title:  "So...I know things then?"
 date:   2015-07-31 09:10:41
-categories: rails ruby project update week-eight
+categories: rails ruby project update week-nine
 ---
 
 Today was the last day, when we were supposed to present our projects.  This has been a soft deadline from the first.  Sumeet told us on Monday that in the past, many groups worked on their project over the weekend.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Do I know things?  Let's find out"
 date:   2015-07-28 09:10:41
-categories: rails ruby project
+categories: rails ruby project week-nine
 ---
 
 This week, we are working on group projects.  Ambitious group projects.  To build something, for real people, from scratch.
