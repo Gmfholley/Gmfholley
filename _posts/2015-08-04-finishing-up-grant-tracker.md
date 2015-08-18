@@ -196,39 +196,161 @@ Any User can Read objects (whether they belong to them or not) from the followin
  - StatusTask
  - StatusProposal
  
-| Key to Table |    |
-|---------|---------|
-| Model | Symbol|
-|-------|-------|
-| Any User  | U     |
-| Collaborating User | C |
-| Owning User | O |
-| Admin | A |
-
+Key to Table
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any User</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Collaborating User</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Owning User</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>Admin</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
 
 These permissions are cascading.  So if Any User can do it, so can a Collaborating User, an Owning User, and an Admin.  But if A Collaborating User can do it, Any User cannot.
- 
- 
-| Model                                 | Create | Read | Update | Destroy |
-| --------------------------------------|--------|------|--------|---------|
-|User                                   |  U     |  O     |   O     |    A      |
-|UserSetting                            |  U     |  O     |   O     |    A      |
-|Organization                           |  U     |  U     |   U     |    A      |
-|OrganizationMaterial                   |  U     |  U     |   U     |    A      |
-|ProposalMaterial                       |  U     |  U     |   U     |    A      |
-|Proposal                               |  U     |  U     |   U     |    A      |
-|Task-User Association                  |  O     |  C     |   O     |    O      |
-|Task                                   |  U     |  C     |   C     |    A      |
-|Reminder                               |  U     |  O     |   O     |    O      |
-|StatusReminder                         |  A     |  U     |   A     |    A      |
-|StatusTask                             |  A     |  U     |   A     |    A      |
-|StatusProposal                         |  A     |  U     |   A     |    A      |
-|GrantType                              |  A     |  U     |   A     |    A      |
-|ProposalTemplate                       |  U     |  U     |   ?     |    A      |
-|Spreadsheets                           |  U     |  U     |   U     |    U      |
-|Export                                 |  -     |  U     |   -     |    -      |
 
-
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Create</th>
+      <th>Read</th>
+      <th>Update</th>
+      <th>Destroy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User</td>
+      <td>U</td>
+      <td>O</td>
+      <td>O</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>UserSetting</td>
+      <td>U</td>
+      <td>O</td>
+      <td>O</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Organization</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>OrganizationMaterial</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>ProposalMaterial</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Proposal</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Task-User Association</td>
+      <td>O</td>
+      <td>C</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>U</td>
+      <td>C</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Reminder</td>
+      <td>U</td>
+      <td>O</td>
+      <td>U</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>StatusReminder</td>
+      <td>A</td>
+      <td>U</td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>StatusProposal</td>
+      <td>A</td>
+      <td>U</td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>StatusTask</td>
+      <td>A</td>
+      <td>U</td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>GrantType</td>
+      <td>A</td>
+      <td>U</td>
+      <td>A</td>
+      <td>A</td>
+    </tr> 
+    <tr>
+      <td>ProposalTempalte</td>
+      <td>U</td>
+      <td>U</td>
+      <td>?</td>
+      <td>A</td>
+    </tr>  
+    <tr>
+      <td>Spreadsheets</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+    </tr> 
+    <tr>
+      <td>Export</td>
+      <td>-</td>
+      <td>U</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Creating Helper Model Default Records and Admin
 
